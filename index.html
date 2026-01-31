@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trading Dashboard Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e293b;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #38bdf8;
+    }
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .container {
+      padding: 40px;
+    }
+    .page-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .page-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    .page-card:hover {
+      background: #334155;
+      transform: translateY(-3px);
+    }
+    .page-card a {
+      text-decoration: none;
+      color: #f1f5f9;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .tool-section {
+      margin-top: 60px;
+    }
+    .tool-section h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+    .tool-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .tool-box {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      min-height: 200px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      background: #1e293b;
+      margin-top: 60px;
+    }
+    
+    .breaking-ticker {
+  background-color: #dc2626;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-bottom: 2px solid #7f1d1d;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+  </style>
+
+  <script>
+    function fourmentor() {
+      	window.open("https://www.youtube.com/@ForexSalary", "_blank", "width=800,height=600");
+	window.open("https://www.youtube.com/@iitiantrader", "_blank", "width=800,height=600");
+	window.open("https://www.youtube.com/@thetraderoomsss", "_blank", "width=800,height=600");
+	window.open("https://www.youtube.com/@thetraderoomsss", "_blank", "width=800,height=600");
+     
+    }
+  </script>
+</head>
+
+<div class="breaking-ticker">
+  <marquee behavior="scroll" direction="left" scrollamount="6">
+    <span class="blink">🚨 BREAKING: Gold breaks $2400 resistance | BTC above $75K | USD/JPY hits 160.00 🚨</span>
+  </marquee>
+</div>
+
+<body>
+
+  <header>
+    <h1>Trading Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gold4TF.html">All about gold</a>
+      <a href="https://docs.google.com/spreadsheets/d/1iveNGKBEm2o0pcPhHlbg4ci79RiG-L7nw-TukK1bTbk/edit?usp=sharing">Journal/Plan</a>
+      <a href="https://www.financialjuice.com/home">F Juice</a>
+      <a href="https://www.tradingview.com/", "_blank", "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=1200,height=800">Chart open</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Welcome to Your Trading Project</h2>
+    <p>Select a page below to get started:</p>
+
+    <div class="page-links">
+      <div class="page-card">
+        <a href="all gold.html">📈 Gold 4 TF</a>
+      </div>
+      <div class="page-card">
+        <a href="4sepatechartas4timeframeasinput.html">🧠 Gold, BTC, USDJPY, USOIL - Candlestick Charts (No Volume)</a>
+      </div>
+      <div class="page-card">
+        <a href="4NewsChannel.html">🧰 Video News Live</a>
+      </div>
+      <div class="page-card">
+<button onclick="fourmentor()">4 mentor channal</button>
+        <a href="education.html">📚 Education</a>
+      </div>
+      <div class="page-card">
+        <a href="signals.html">💡 Trading Signals</a>
+      </div>
+      <div class="page-card">
+        <a href="https://www.tradingview.com/", "_blank", "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=1200,height=800">📨 Chart open TV</a>
+      </div>
+
+<div class="page-card">
+        <a href="https://www.ig.com/uk/economic-calendar/">📨 Forex news</a>
+      </div>
+    </div>
+
+    <!-- Tool Sections -->
+    <div class="tool-section">
+      <h2>📝 To-Do List</h2>
+      <div class="tool-boxes">
+        <div class="tool-box">
+          <!-- Placeholder for future dynamic To-Do List -->
+          <p>Track your daily trading tasks here. You can add a form or dynamic JavaScript here later.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>🗓️ Weekly Calendar View</h2>
+      <div class="tool-boxes">
+        <div class="tool-box">
+          <p>Plan your week ahead with trading schedules, economic events, and more.</p>
+          <p><i>(You can integrate a calendar script or iframe here.)</i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-section">
+      <h2>🎯 Goals & Targets</h2>
+      <div class="tool-boxes">
+        <div class="tool-box">
+          <p>Define and monitor your trading goals, profit targets, risk rules, etc.</p>
+          <p><i>Future update: Add editable inputs and a progress bar.</i></p>
+        </div>
+      </div>
+    </div>
+
+
+<div class="tool-section">
+      <h2>🎯 Goals & Targets</h2>
+      <div class="tool-boxes">
+        <div class="tool-box">
+        <iframe 
+  src="https://docs.google.com/spreadsheets/d/1iveNGKBEm2o0pcPhHlbg4ci79RiG-L7nw-TukK1bTbk/edit?usp=sharing&single=true&widget=true&headers=false" 
+  width="100%" 
+  height="400">
+</iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    &copy; 2025 My Trading Project — Built by Amit Paul
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chart Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    select {
+      font-size: 16px;
+      padding: 5px;
+      margin: 10px;
+    }
+    iframe {
+      width: 45%;
+      height: 500px;
+      border: none;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select Symbol to View Charts</h2>
+  <select id="symbolSelector" onchange="updateCharts()">
+    <option value="FX:EURUSD">EURUSD</option>
+    <option value="FX:GBPUSD">GBPUSD</option>
+    <option value="CRYPTO:BTCUSD">Bitcoin (BTCUSD)</option>
+  </select>
+
+  <div>
+    <h3>Daily Chart</h3>
+    <iframe id="dailyChart"></iframe>
+    
+    <h3>Weekly Chart</h3>
+    <iframe id="weeklyChart"></iframe>
+  </div>
+
+  <script>
+    function updateCharts() {
+      const symbol = document.getElementById('symbolSelector').value;
+      const dailyIframe = document.getElementById('dailyChart');
+      const weeklyIframe = document.getElementById('weeklyChart');
+
+      dailyIframe.src = `https://s.tradingview.com/widgetembed/?frameElementId=tradingview_f3cd0&symbol=${symbol}&interval=D&theme=light&style=1&toolbarbg=f1f3f6&studies=[]&hideideas=1`;
+      weeklyIframe.src = `https://s.tradingview.com/widgetembed/?frameElementId=tradingview_f3cd0&symbol=${symbol}&interval=W&theme=light&style=1&toolbarbg=f1f3f6&studies=[]&hideideas=1`;
+    }
+
+    // Load default charts on page load
+    window.onload = updateCharts;
+  </script>
+
+</body>
+</html>

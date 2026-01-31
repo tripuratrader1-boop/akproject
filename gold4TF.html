@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gold Charts - XAU/USD Timeframes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      height: 100vh;
+    }
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      min-height: 50vh;
+    }
+    .label {
+      background-color: #111;
+      color: #f0f0f0;
+      padding: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+    iframe {
+      flex-grow: 1;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 768px) {
+      body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chart-container">
+    <div class="label">XAU/USD - 1 Minute</div>
+    <iframe src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=1&theme=dark&style=1&timezone=Etc%2FUTC&hide_volume=true&hide_side_toolbar=0&allow_symbol_change=1"></iframe>
+  </div>
+
+  <div class="chart-container">
+    <div class="label">XAU/USD - 5 Minute</div>
+    <iframe src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=5&theme=dark&style=1&timezone=Etc%2FUTC&hide_volume=true"></iframe>
+  </div>
+
+  <div class="chart-container">
+    <div class="label">XAU/USD - 15 Minute</div>
+    <iframe src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=15&theme=dark&style=1&timezone=Etc%2FUTC&hide_volume=true"></iframe>
+  </div>
+
+  <div class="chart-container">
+    <div class="label">XAU/USD - 1 Hour</div>
+    <iframe src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=60&theme=dark&style=1&timezone=Etc%2FUTC&hide_volume=true"></iframe>
+  </div>
+
+</body>
+</html>
